@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #202020;
+}
+.container {
+  width: 140px;
+  height: 250px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    90deg,
+    #b1060e 0,
+    #b1060e 50px,
+    transparent 50px,
+    transparent 90px,
+    #b1060e 90px,
+    #b1060e 140px
+  );
+}
+.container::before,
+.container:after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+.container:before {
+  width: 50px;
+  height: 250px;
+  top: 0;
+  left: 45px;
+  background: #e50914;
+  transform: skewX(19.6deg);
+  box-shadow: 0 0 30px #000;
+}
+.container:after {
+  width: 190px;
+  height: 25px;
+  top: 245px;
+  left: -25px;
+  border-radius: 50%;
+  background-color: #202020;
+}
